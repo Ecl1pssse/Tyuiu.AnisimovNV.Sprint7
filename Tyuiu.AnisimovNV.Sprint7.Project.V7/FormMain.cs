@@ -16,6 +16,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7
             InitializeComponent();
             SetupDataGridView();
             UpdateStatus("Готово");
+            data = new string[0, 0]; // Или new string[1, 1] — главное, чтобы не было null
         }
 
         private void SetupDataGridView()

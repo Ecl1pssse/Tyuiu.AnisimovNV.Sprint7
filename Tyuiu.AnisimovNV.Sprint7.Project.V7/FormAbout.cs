@@ -13,15 +13,5 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7
         {
             this.Close();
         }
-
-        private void FormAbout_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelInfo_NVA_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
