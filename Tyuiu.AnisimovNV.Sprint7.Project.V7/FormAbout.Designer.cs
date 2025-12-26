@@ -18,57 +18,62 @@
 
         private void InitializeComponent()
         {
-            this.labelTitle_NVA = new System.Windows.Forms.Label();
-            this.labelInfo_NVA = new System.Windows.Forms.Label();
-            this.buttonOK_NVA = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            labelTitle_NVA = new Label();
+            labelInfo_NVA = new Label();
+            buttonOK_NVA = new Button();
+            SuspendLayout();
             // 
             // labelTitle_NVA
             // 
-            this.labelTitle_NVA.AutoSize = true;
-            this.labelTitle_NVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelTitle_NVA.Location = new System.Drawing.Point(12, 9);
-            this.labelTitle_NVA.Name = "labelTitle_NVA";
-            this.labelTitle_NVA.Size = new System.Drawing.Size(267, 20);
-            this.labelTitle_NVA.TabIndex = 0;
-            this.labelTitle_NVA.Text = "Учет квартир и жильцов v1.0";
+            labelTitle_NVA.AutoSize = true;
+            labelTitle_NVA.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            labelTitle_NVA.Location = new Point(14, 10);
+            labelTitle_NVA.Margin = new Padding(4, 0, 4, 0);
+            labelTitle_NVA.Name = "labelTitle_NVA";
+            labelTitle_NVA.Size = new Size(255, 20);
+            labelTitle_NVA.TabIndex = 0;
+            labelTitle_NVA.Text = "Учет квартир и жильцов v1.0";
             // 
             // labelInfo_NVA
             // 
-            this.labelInfo_NVA.AutoSize = true;
-            this.labelInfo_NVA.Location = new System.Drawing.Point(13, 48);
-            this.labelInfo_NVA.Name = "labelInfo_NVA";
-            this.labelInfo_NVA.Size = new System.Drawing.Size(256, 65);
-            this.labelInfo_NVA.TabIndex = 1;
-            this.labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: ИИПб-23-2\r\nВариант задания: 7\r\nПредметная о" +
-    "бласть: Домоуправление\r\nДата создания: 2024";
+            labelInfo_NVA.AutoSize = true;
+            labelInfo_NVA.Location = new Point(15, 55);
+            labelInfo_NVA.Margin = new Padding(4, 0, 4, 0);
+            labelInfo_NVA.Name = "labelInfo_NVA";
+            labelInfo_NVA.Size = new Size(223, 75);
+            labelInfo_NVA.TabIndex = 1;
+            labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: ИИПб-25-1\r\nВариант задания: 7\r\nПредметная область: Домоуправление\r\nДата создания: 2025";
+            labelInfo_NVA.Click += labelInfo_NVA_Click;
             // 
             // buttonOK_NVA
             // 
-            this.buttonOK_NVA.Location = new System.Drawing.Point(203, 130);
-            this.buttonOK_NVA.Name = "buttonOK_NVA";
-            this.buttonOK_NVA.Size = new System.Drawing.Size(75, 23);
-            this.buttonOK_NVA.TabIndex = 2;
-            this.buttonOK_NVA.Text = "OK";
-            this.buttonOK_NVA.UseVisualStyleBackColor = true;
-            this.buttonOK_NVA.Click += new System.EventHandler(this.buttonOK_NVA_Click);
+            buttonOK_NVA.Location = new Point(237, 150);
+            buttonOK_NVA.Margin = new Padding(4, 3, 4, 3);
+            buttonOK_NVA.Name = "buttonOK_NVA";
+            buttonOK_NVA.Size = new Size(88, 27);
+            buttonOK_NVA.TabIndex = 2;
+            buttonOK_NVA.Text = "OK";
+            buttonOK_NVA.UseVisualStyleBackColor = true;
+            buttonOK_NVA.Click += buttonOK_NVA_Click;
             // 
             // FormAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 165);
-            this.Controls.Add(this.buttonOK_NVA);
-            this.Controls.Add(this.labelInfo_NVA);
-            this.Controls.Add(this.labelTitle_NVA);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "FormAbout";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "О программе";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(343, 190);
+            Controls.Add(buttonOK_NVA);
+            Controls.Add(labelInfo_NVA);
+            Controls.Add(labelTitle_NVA);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "FormAbout";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "О программе";
+            Load += FormAbout_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
