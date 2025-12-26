@@ -141,7 +141,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             int cols = data.GetLength(1);
             string[,] sorted = new string[rows, cols];
 
-            // Копируем заголовок
+
             for (int j = 0; j < cols; j++) sorted[0, j] = data[0, j];
 
             var rowList = new List<string[]>();
