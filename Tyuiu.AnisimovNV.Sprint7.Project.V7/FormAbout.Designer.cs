@@ -9,10 +9,7 @@
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
@@ -22,29 +19,19 @@
             this.labelInfo_NVA = new System.Windows.Forms.Label();
             this.buttonOK_NVA = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // labelTitle_NVA
-            // 
             this.labelTitle_NVA.AutoSize = true;
-            this.labelTitle_NVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTitle_NVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.labelTitle_NVA.Location = new System.Drawing.Point(12, 9);
             this.labelTitle_NVA.Name = "labelTitle_NVA";
             this.labelTitle_NVA.Size = new System.Drawing.Size(267, 20);
             this.labelTitle_NVA.TabIndex = 0;
             this.labelTitle_NVA.Text = "Учет квартир и жильцов v1.0";
-            // 
-            // labelInfo_NVA
-            // 
             this.labelInfo_NVA.AutoSize = true;
             this.labelInfo_NVA.Location = new System.Drawing.Point(13, 48);
             this.labelInfo_NVA.Name = "labelInfo_NVA";
             this.labelInfo_NVA.Size = new System.Drawing.Size(256, 65);
             this.labelInfo_NVA.TabIndex = 1;
-            this.labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: ИИПб-25-1\r\nВариант задания: 7\r\nПредметная о" +
-    "бласть: Домоуправление\r\nДата создания: 2025";
-            // 
-            // buttonOK_NVA
-            // 
+            this.labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: ИИПб-23-2\r\nВариант: 7\r\nПредмет: Домоуправление\r\n2024";
             this.buttonOK_NVA.Location = new System.Drawing.Point(203, 130);
             this.buttonOK_NVA.Name = "buttonOK_NVA";
             this.buttonOK_NVA.Size = new System.Drawing.Size(75, 23);
@@ -52,9 +39,6 @@
             this.buttonOK_NVA.Text = "OK";
             this.buttonOK_NVA.UseVisualStyleBackColor = true;
             this.buttonOK_NVA.Click += new System.EventHandler(this.buttonOK_NVA_Click);
-            // 
-            // FormAbout
-            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(294, 165);

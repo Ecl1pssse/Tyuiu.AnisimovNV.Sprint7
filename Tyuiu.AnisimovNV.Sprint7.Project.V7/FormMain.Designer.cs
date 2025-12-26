@@ -22,13 +22,17 @@
         private System.Windows.Forms.DataGridView dataGridViewApartments_NVA;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel_NVA;
+        private System.Windows.Forms.Panel panelTools_NVA;
+        private System.Windows.Forms.Button buttonSearch_NVA;
+        private System.Windows.Forms.Button buttonStatistics_NVA;
+        private System.Windows.Forms.Button buttonFilterDebt_NVA;
+        private System.Windows.Forms.Button buttonSortSurname_NVA;
+        private System.Windows.Forms.Button buttonResetFilters_NVA;
+        private System.Windows.Forms.Button buttonAddRecord_NVA;
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
@@ -53,9 +57,17 @@
             this.dataGridViewApartments_NVA = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_NVA = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panelTools_NVA = new System.Windows.Forms.Panel();
+            this.buttonAddRecord_NVA = new System.Windows.Forms.Button();
+            this.buttonResetFilters_NVA = new System.Windows.Forms.Button();
+            this.buttonSortSurname_NVA = new System.Windows.Forms.Button();
+            this.buttonFilterDebt_NVA = new System.Windows.Forms.Button();
+            this.buttonStatistics_NVA = new System.Windows.Forms.Button();
+            this.buttonSearch_NVA = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApartments_NVA)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            this.panelTools_NVA.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -133,7 +145,7 @@
             // 
             this.статистикаToolStripMenuItem_NVA.Name = "статистикаToolStripMenuItem_NVA";
             this.статистикаToolStripMenuItem_NVA.Size = new System.Drawing.Size(210, 22);
-            this.статистикаToolStripMenuItem_NVA.Text = "Показать статистику";
+            this.статистикаToolStripMenuItem_NVA.Text = "Статистика";
             this.статистикаToolStripMenuItem_NVA.Click += new System.EventHandler(this.статистикаToolStripMenuItem_NVA_Click);
             // 
             // фильтрЗадолженностьToolStripMenuItem_NVA
@@ -187,13 +199,87 @@
             this.руководствоToolStripMenuItem_NVA.Text = "Руководство";
             this.руководствоToolStripMenuItem_NVA.Click += new System.EventHandler(this.руководствоToolStripMenuItem_NVA_Click);
             // 
+            // panelTools_NVA
+            // 
+            this.panelTools_NVA.Controls.Add(this.buttonAddRecord_NVA);
+            this.panelTools_NVA.Controls.Add(this.buttonResetFilters_NVA);
+            this.panelTools_NVA.Controls.Add(this.buttonSortSurname_NVA);
+            this.panelTools_NVA.Controls.Add(this.buttonFilterDebt_NVA);
+            this.panelTools_NVA.Controls.Add(this.buttonStatistics_NVA);
+            this.panelTools_NVA.Controls.Add(this.buttonSearch_NVA);
+            this.panelTools_NVA.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTools_NVA.Location = new System.Drawing.Point(0, 24);
+            this.panelTools_NVA.Name = "panelTools_NVA";
+            this.panelTools_NVA.Size = new System.Drawing.Size(984, 40);
+            this.panelTools_NVA.TabIndex = 3;
+            // 
+            // buttonSearch_NVA
+            // 
+            this.buttonSearch_NVA.Location = new System.Drawing.Point(5, 8);
+            this.buttonSearch_NVA.Name = "buttonSearch_NVA";
+            this.buttonSearch_NVA.Size = new System.Drawing.Size(120, 25);
+            this.buttonSearch_NVA.TabIndex = 0;
+            this.buttonSearch_NVA.Text = "Поиск по фамилии";
+            this.buttonSearch_NVA.UseVisualStyleBackColor = true;
+            this.buttonSearch_NVA.Click += new System.EventHandler(this.buttonSearch_NVA_Click);
+            // 
+            // buttonStatistics_NVA
+            // 
+            this.buttonStatistics_NVA.Location = new System.Drawing.Point(135, 8);
+            this.buttonStatistics_NVA.Name = "buttonStatistics_NVA";
+            this.buttonStatistics_NVA.Size = new System.Drawing.Size(100, 25);
+            this.buttonStatistics_NVA.TabIndex = 1;
+            this.buttonStatistics_NVA.Text = "Статистика";
+            this.buttonStatistics_NVA.UseVisualStyleBackColor = true;
+            this.buttonStatistics_NVA.Click += new System.EventHandler(this.buttonStatistics_NVA_Click);
+            // 
+            // buttonFilterDebt_NVA
+            // 
+            this.buttonFilterDebt_NVA.Location = new System.Drawing.Point(245, 8);
+            this.buttonFilterDebt_NVA.Name = "buttonFilterDebt_NVA";
+            this.buttonFilterDebt_NVA.Size = new System.Drawing.Size(130, 25);
+            this.buttonFilterDebt_NVA.TabIndex = 2;
+            this.buttonFilterDebt_NVA.Text = "С задолженностью";
+            this.buttonFilterDebt_NVA.UseVisualStyleBackColor = true;
+            this.buttonFilterDebt_NVA.Click += new System.EventHandler(this.buttonFilterDebt_NVA_Click);
+            // 
+            // buttonSortSurname_NVA
+            // 
+            this.buttonSortSurname_NVA.Location = new System.Drawing.Point(385, 8);
+            this.buttonSortSurname_NVA.Name = "buttonSortSurname_NVA";
+            this.buttonSortSurname_NVA.Size = new System.Drawing.Size(140, 25);
+            this.buttonSortSurname_NVA.TabIndex = 3;
+            this.buttonSortSurname_NVA.Text = "Сортировка по фамилии";
+            this.buttonSortSurname_NVA.UseVisualStyleBackColor = true;
+            this.buttonSortSurname_NVA.Click += new System.EventHandler(this.buttonSortSurname_NVA_Click);
+            // 
+            // buttonResetFilters_NVA
+            // 
+            this.buttonResetFilters_NVA.Location = new System.Drawing.Point(535, 8);
+            this.buttonResetFilters_NVA.Name = "buttonResetFilters_NVA";
+            this.buttonResetFilters_NVA.Size = new System.Drawing.Size(120, 25);
+            this.buttonResetFilters_NVA.TabIndex = 4;
+            this.buttonResetFilters_NVA.Text = "Сбросить фильтры";
+            this.buttonResetFilters_NVA.UseVisualStyleBackColor = true;
+            this.buttonResetFilters_NVA.Click += new System.EventHandler(this.buttonResetFilters_NVA_Click);
+            // 
+            // buttonAddRecord_NVA
+            // 
+            this.buttonAddRecord_NVA.Location = new System.Drawing.Point(665, 8);
+            this.buttonAddRecord_NVA.Name = "buttonAddRecord_NVA";
+            this.buttonAddRecord_NVA.Size = new System.Drawing.Size(120, 25);
+            this.buttonAddRecord_NVA.TabIndex = 5;
+            this.buttonAddRecord_NVA.Text = "Добавить запись";
+            this.buttonAddRecord_NVA.UseVisualStyleBackColor = true;
+            this.buttonAddRecord_NVA.Click += new System.EventHandler(this.buttonAddRecord_NVA_Click);
+            // 
             // dataGridViewApartments_NVA
             // 
             this.dataGridViewApartments_NVA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewApartments_NVA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewApartments_NVA.Location = new System.Drawing.Point(0, 24);
+            this.dataGridViewApartments_NVA.Location = new System.Drawing.Point(0, 64);
             this.dataGridViewApartments_NVA.Name = "dataGridViewApartments_NVA";
-            this.dataGridViewApartments_NVA.Size = new System.Drawing.Size(984, 482);
+            this.dataGridViewApartments_NVA.Size = new System.Drawing.Size(984, 420);
             this.dataGridViewApartments_NVA.TabIndex = 1;
             // 
             // statusStrip1
@@ -217,8 +303,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 506);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.dataGridViewApartments_NVA);
+            this.Controls.Add(this.panelTools_NVA);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
@@ -228,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewApartments_NVA)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.panelTools_NVA.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }

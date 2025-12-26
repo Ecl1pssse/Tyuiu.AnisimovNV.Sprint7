@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Task 1/">
+    <File Path="TextFile.csv" />
     <Project Path="Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib/Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib.csproj" />
     <Project Path="Tyuiu.AnisimovNV.Sprint7.Project.V7.Test/Tyuiu.AnisimovNV.Sprint7.Project.V7.Test.csproj" />
     <Project Path="Tyuiu.AnisimovNV.Sprint7.Project.V7/Tyuiu.AnisimovNV.Sprint7.Project.V7.csproj" />
