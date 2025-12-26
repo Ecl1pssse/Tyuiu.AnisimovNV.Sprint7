@@ -46,7 +46,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
                 lines[i] = string.Join(";", row);
             }
 
-            File.WriteAllLines(path, lines); // Без кодировки — системная (Windows-1251)
+            File.WriteAllLines(path, lines); 
         }
 
         public int[] SearchBySurname(string[,] data, string surname)
