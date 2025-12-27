@@ -7,7 +7,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
 {
     public class DataService
     {
-        public string[,] LoadFromFile(string path)
+        public string[,] LoadFromFile(string path) //загрузка файла
         {
             if (!File.Exists(path)) return new string[0, 0];
 
@@ -30,7 +30,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             return matrix;
         }
 
-        public void SaveToFile(string path, string[,] data)
+        public void SaveToFile(string path, string[,] data) // сохпаранение файла 
         {
             int rows = data.GetLength(0);
             int cols = data.GetLength(1);
@@ -49,7 +49,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             File.WriteAllLines(path, lines); 
         }
 
-        public int[] SearchBySurname(string[,] data, string surname)
+        public int[] SearchBySurname(string[,] data, string surname) // фильтрация по фамилии
         {
             if (data.GetLength(0) <= 1) return Array.Empty<int>();
             List<int> indexes = new List<int>();
@@ -66,7 +66,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             return indexes.ToArray();
         }
 
-        public string[] GetStatistics(string[,] data)
+        public string[] GetStatistics(string[,] data) //получение статистики 
         {
             if (data.GetLength(0) <= 1) return new string[] { "Нет данных" };
 
@@ -109,7 +109,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             };
         }
 
-        public string[,] FilterByDebt(string[,] data, bool hasDebt)
+        public string[,] FilterByDebt(string[,] data, bool hasDebt)  //фильтр по задолжнести
         {
             if (data.GetLength(0) == 0) return new string[0, 0];
             List<int> rows = new List<int> { 0 };
@@ -134,7 +134,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             return result;
         }
 
-        public string[,] SortData(string[,] data, int col, bool asc = true)
+        public string[,] SortData(string[,] data, int col, bool asc = true) //сортировка данных 
         {
             if (data.GetLength(0) <= 2) return data;
             int rows = data.GetLength(0);
@@ -142,7 +142,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
             string[,] sorted = new string[rows, cols];
 
 
-            for (int j = 0; j < cols; j++) sorted[0, j] = data[0, j];
+            for (int j = 0; j < cols; j++) sorted[0, j] = data[0, j]; //cохранить первю строку  на прежнем месте
 
             var rowList = new List<string[]>();
             for (int i = 1; i < rows; i++)
