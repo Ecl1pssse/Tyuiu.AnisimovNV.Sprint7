@@ -34,7 +34,7 @@ namespace Tyuiu.AnisimovNV.Sprint7.Project.V7.Lib
         {
             int rows = data.GetLength(0);
             int cols = data.GetLength(1);
-            string[] lines = new string[rows];
+            string[] lines = new string[rows]; //главное не выбрать кодировку) винда подставит 1251 а то кирилллицу не читает
 
             for (int i = 0; i < rows; i++)
             {
