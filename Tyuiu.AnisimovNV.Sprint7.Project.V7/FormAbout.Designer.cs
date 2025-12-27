@@ -31,7 +31,7 @@
             this.labelInfo_NVA.Name = "labelInfo_NVA";
             this.labelInfo_NVA.Size = new System.Drawing.Size(256, 65);
             this.labelInfo_NVA.TabIndex = 1;
-            this.labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: ИИПб-23-2\r\nВариант: 7\r\nПредмет: Домоуправление\r\n2024";
+            this.labelInfo_NVA.Text = "Разработчик: Анисимов Н.В.\r\nГруппа: слезы слезы на морозе-25-1\r\nВариант: 7\r\nПредмет: Домоуправление\r\n2024";
             this.buttonOK_NVA.Location = new System.Drawing.Point(203, 130);
             this.buttonOK_NVA.Name = "buttonOK_NVA";
             this.buttonOK_NVA.Size = new System.Drawing.Size(75, 23);
